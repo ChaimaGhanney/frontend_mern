@@ -55,9 +55,9 @@ const ProfileSection = () => {
 
   const handleLogout = async () => {
     console.log('Logout');
-    try {
+    try {        
       const response = await axios.post(
-        'http://192.168.10.15:4000/logout',
+        'http://192.168.11.103:4000/logout',
         {},
         {
           headers: {
@@ -65,6 +65,7 @@ const ProfileSection = () => {
           }
         }
       );
+      // haw hakka nbalou les liens fel front 
       console.log(response.data.message);
       localStorage.removeItem('token');
       toast.success('Logged out successfully!');
@@ -82,7 +83,7 @@ const ProfileSection = () => {
 
   const fetchCurrentUser = async () => {
     try {
-      const response = await axios.get('http://192.168.10.15:4000/user', {
+      const response = await axios.get('http://192.168.11.103:4000/user', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

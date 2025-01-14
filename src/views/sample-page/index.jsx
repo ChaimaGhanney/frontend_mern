@@ -50,7 +50,7 @@ const AddNewProductForm = () => {
     e.preventDefault();
     try {
       console.log(formValues);
-      axios.post('http://192.168.10.15:4000/add_product_with_image', formValues, {
+      axios.post('http://192.168.11.103:4000/add_product_with_image', formValues, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
           'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ const AddNewProductForm = () => {
       const formData = new FormData();
       formData.append('image', formValues.image);
 
-      axios.post('http://192.168.10.15:4000/upload_product_image', formData, {
+      axios.post('http://192.168.11.103:4000/upload_product_image', formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
           'Content-Type': 'multipart/form-data' // Use multipart/form-data for file upload

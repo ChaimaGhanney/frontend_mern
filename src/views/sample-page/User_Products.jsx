@@ -30,7 +30,7 @@ const AllProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://192.168.10.15:4000/get_product', {
+        const response = await axios.get('http://192.168.11.103:4000/get_product', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
@@ -70,7 +70,7 @@ const AllProducts = () => {
 
   const handleDeleteProduct = async (productId) => {
     try {
-      await axios.delete(`http://192.168.10.15:4000/del_product_user/${productId}`, {
+      await axios.delete(`http://192.168.11.103:4000/del_product_user/${productId}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
           'Content-Type': 'multipart/form-data'
@@ -86,7 +86,7 @@ const AllProducts = () => {
 
   const handleUpdateProduct = async (productId) => {
     try {
-      await axios.put(`http://192.168.10.15:4000/update_product_user/${productId}`, updateProductDetails, {
+      await axios.put(`http://192.168.11.103:4000/update_product_user/${productId}`, updateProductDetails, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
           'Content-Type': 'application/json'
@@ -158,7 +158,7 @@ const AllProducts = () => {
             <CardMedia
               component="img"
               height="300"
-              image={`http://192.168.10.15:4000/images/${selectedProduct?.image_name}`}
+              image={`http://192.168.11.103:4000/images/${selectedProduct?.image_name}`}
               alt="product image"
             />
             <CardContent>
@@ -307,7 +307,7 @@ const AllProducts = () => {
                     <CardMedia
                       component="img"
                       height="140"
-                      image={`http://192.168.10.15:4000/images/${product?.image_name}`}
+                      image={`http://192.168.11.103:4000/images/${product?.image_name}`}
                       alt="product image"
                     />
                     <CardContent sx={{ flexGrow: 1 }}>

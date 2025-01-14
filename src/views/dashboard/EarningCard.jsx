@@ -34,7 +34,7 @@ const EarningCard = ({ isLoading }) => {
   useEffect(() => {
     const fetchTotalCount = async () => {
       try {
-        const response = await axios.get('http://192.168.10.15:4000/total_products', {
+        const response = await axios.get('http://192.168.11.103:4000/total_products', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
             'Content-Type': 'multipart/form-data'

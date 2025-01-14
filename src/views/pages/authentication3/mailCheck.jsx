@@ -35,7 +35,7 @@ const MailCheck = () => {
   const handleSubmitEmail = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://192.168.10.15:4000/finduser', { email });
+      const response = await axios.post('http://192.168.11.103:4000/finduser', { email });
       setSubmitted(true);
       setOtpSent(true);
       toast.success('OTP sent to your email. Please check your email.');
@@ -48,7 +48,7 @@ const MailCheck = () => {
   const handleSubmitOtp = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://192.168.10.15:4000/verifyotp', { email, otp });
+      const response = await axios.post('http://192.168.11.103:4000/verifyotp', { email, otp });
       if (response.data.message === 'OTP verified') {
         setOtpVerified(true);
       } else {
@@ -63,7 +63,7 @@ const MailCheck = () => {
   const handleSubmitPassword = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://192.168.10.15:4000/updatepassword', { email, otp, newPassword });
+      const response = await axios.post('http://192.168.11.103:4000/updatepassword', { email, otp, newPassword });
       if (response.data.message === 'Password updated successfully') {
         toast.success('Password updated successfully');
         navigate('/auth/login');

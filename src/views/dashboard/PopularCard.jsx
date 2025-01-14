@@ -31,7 +31,7 @@ const PopularCard = ({ isLoading }) => {
   // Fetch products and filter them
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://192.168.10.15:4000/get_product', {
+      const response = await axios.get('http://192.168.11.103:4000/get_product', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

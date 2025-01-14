@@ -90,10 +90,10 @@ const TotalGrowthBarChart = ({ isLoading }) => {
     const fetchPrices = async () => {
       try {
         const [instockRes, outofstockRes] = await Promise.all([
-          axios.get('http://192.168.10.15:4000/instock_prices', {
+          axios.get('http://192.168.11.103:4000/instock_prices', {
             headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
           }),
-          axios.get('http://192.168.10.15:4000/offstock_prices', {
+          axios.get('http://192.168.11.103:4000/offstock_prices', {
             headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
           })
         ]);

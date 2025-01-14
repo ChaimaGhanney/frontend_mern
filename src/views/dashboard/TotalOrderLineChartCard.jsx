@@ -35,11 +35,10 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
   const handleChangeTime = (event, newValue) => {
     setTimeValue(newValue);
   };
-
   useEffect(() => {
     const fetchCounts = async () => {
       try {
-        const inStockResponse = await axios.get('http://192.168.10.15:4000/count_instoc', {
+        const inStockResponse = await axios.get('http://192.168.11.103:4000/count_instoc', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
             'Content-Type': 'application/json'
@@ -48,7 +47,7 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
         console.log('In Stock Count:', inStockResponse.data.inStock);
         setInStockCount(inStockResponse.data.inStock);
 
-        const outOfStockResponse = await axios.get('http://192.168.10.15:4000/count_offstoc', {
+        const outOfStockResponse = await axios.get('http://192.168.11.103:4000/count_offstoc', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
             'Content-Type': 'application/json'
