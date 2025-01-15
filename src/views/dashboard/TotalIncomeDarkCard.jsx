@@ -111,7 +111,7 @@ const TotalIncomeDarkCard = ({ isLoading }) => {
                   }
                   secondary={
                     <Typography variant="subtitle2" sx={{ color: 'primary.light', mt: 0.25 }}>
-                      Total Out of Stock Price
+                      Salary of employees
                     </Typography>
                   }
                 />

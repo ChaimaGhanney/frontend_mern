@@ -141,7 +141,7 @@ const EarningCard = ({ isLoading }) => {
                     color: 'secondary.200'
                   }}
                 >
-                  Total Products
+                 Number of employees
                 </Typography>
               </Grid>
             </Grid>

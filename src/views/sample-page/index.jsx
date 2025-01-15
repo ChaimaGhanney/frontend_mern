@@ -75,7 +75,7 @@ const AddNewProductForm = () => {
   };
 
   return (
-    <MainCard title="Add New Product">
+    <MainCard title="add a new employee">
       <Box
         component="form"
         sx={{
@@ -95,7 +95,7 @@ const AddNewProductForm = () => {
           required
           id="nom_produit"
           name="nom_produit"
-          label="Product Name"
+          label="Employee Name"
           value={formValues.nom_produit}
           onChange={handleInputChange}
           InputProps={{ classes: { underline: 'underline' } }} // Underline style
@@ -105,7 +105,7 @@ const AddNewProductForm = () => {
           id="categorie_produit"
           name="categorie_produit"
           select
-          label="Category"
+          label="Contract Type"
           value={formValues.categorie_produit}
           onChange={handleInputChange}
           InputProps={{ classes: { underline: 'underline' } }} // Underline style
@@ -121,7 +121,7 @@ const AddNewProductForm = () => {
           id="etat"
           name="etat"
           select
-          label="State"
+          label="Job"
           value={formValues.etat}
           onChange={handleInputChange}
           InputProps={{ classes: { underline: 'underline' } }} // Underline style
@@ -136,7 +136,7 @@ const AddNewProductForm = () => {
           required
           id="Marque"
           name="Marque"
-          label="Brand"
+          label="Age"
           value={formValues.Marque}
           onChange={handleInputChange}
           InputProps={{ classes: { underline: 'underline' } }} // Underline style
@@ -145,7 +145,7 @@ const AddNewProductForm = () => {
           required
           id="Prix"
           name="Prix"
-          label="Price"
+          label="Salary"
           type="number"
           value={formValues.Prix}
           onChange={handleInputChange}
