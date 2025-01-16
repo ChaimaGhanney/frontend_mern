@@ -76,7 +76,7 @@ const TotalIncomeLightCard = ({ label }) => {
   if (error) {
     return (
       <Typography variant="h6" color="error">
-        Failed to load data
+        
       </Typography>
     );
   }

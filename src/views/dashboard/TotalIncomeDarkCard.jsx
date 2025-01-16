@@ -75,7 +75,7 @@ const TotalIncomeDarkCard = ({ isLoading }) => {
   if (error) {
     return (
       <Typography variant="h6" color="error">
-        Failed to load data
+        
       </Typography>
     );
   }
