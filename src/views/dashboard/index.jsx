@@ -45,7 +45,7 @@ const Dashboard = () => {
                   {...{
                     isLoading: isLoading,
                     total: 203,
-                    label: 'Total In Stock Price  ',
+                    label: 'Total of the teams',
                     icon: <StorefrontTwoToneIcon fontSize="inherit" />
                   }}
                 />

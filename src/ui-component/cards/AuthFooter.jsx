@@ -8,7 +8,7 @@ import Stack from '@mui/material/Stack';
 const AuthFooter = () => (
   <Stack direction="row" justifyContent="space-between">
     <Typography variant="subtitle2" component={Link} href="#" target="_blank" underline="hover">
-      Medelyes.Abidi
+      Chaima.Ghanney
     </Typography>
     <Typography variant="subtitle2" component={Link} href="#" target="_blank" underline="hover">
       PFE&copy; 2024

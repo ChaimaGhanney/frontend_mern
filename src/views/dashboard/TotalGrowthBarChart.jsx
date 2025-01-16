@@ -143,21 +143,21 @@ const TotalGrowthBarChart = ({ isLoading }) => {
                 <Grid item>
                   <Grid container direction="column" spacing={1}>
                     <Grid item>
-                      <Typography variant="subtitle2">Total Growth</Typography>
+                      <Typography variant="subtitle2">Percentage of completed tasks</Typography>
                     </Grid>
                     <Grid item>
-                      <Typography variant="h3">${priceDifference.toLocaleString()}</Typography>
+                      <Typography variant="h3">%{priceDifference.toLocaleString()}</Typography>
                     </Grid>
                   </Grid>
                 </Grid>
                 <Grid item>
-                  <Typography variant="subtitle1">In Stock against Out of Stock</Typography>
+                  <Typography variant="subtitle1"> Present against Absent </Typography>
                 </Grid>
               </Grid>
             </Grid>
             <Grid item xs={6}>
               <Typography variant="h6" align="center">
-                Out of Stock
+                Absent
               </Typography>
               <div style={{ width: '100%', height: '300px' }}>
                 <Chart options={outOfStockChartData.options} series={outOfStockChartData.series} type="bar" height="100%" width="100%" />
@@ -165,7 +165,7 @@ const TotalGrowthBarChart = ({ isLoading }) => {
             </Grid>
             <Grid item xs={6}>
               <Typography variant="h6" align="center">
-                In Stock
+                Present
               </Typography>
               <div style={{ width: '100%', height: '300px' }}>
                 <Chart options={inStockChartData.options} series={inStockChartData.series} type="bar" height="100%" width="100%" />

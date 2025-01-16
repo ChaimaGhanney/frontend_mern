@@ -131,7 +131,7 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
                       sx={{ color: 'inherit' }}
                       onClick={(e) => handleChangeTime(e, true)}
                     >
-                      In Stock
+                      Présent
                     </Button>
                     <Button
                       disableElevation
@@ -140,7 +140,7 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
                       sx={{ color: 'inherit' }}
                       onClick={(e) => handleChangeTime(e, false)}
                     >
-                      Out of Stock
+                      Absent
                     </Button>
                   </Grid>
                 </Grid>
