@@ -68,7 +68,7 @@ const PopularCard = ({ isLoading }) => {
               <Grid item xs={12}>
                 <Grid container alignContent="center" justifyContent="space-between">
                   <Grid item>
-                    <Typography variant="h4">Balance Stocks</Typography>
+                    <Typography variant="h4">Performance</Typography>
                   </Grid>
                 </Grid>
               </Grid>
@@ -128,7 +128,7 @@ const PopularCard = ({ isLoading }) => {
                   ) : (
                     <Grid item xs={12}>
                       <Typography variant="subtitle1" color="inherit">
-                        No products available
+                      Workload
                       </Typography>
                     </Grid>
                   )}

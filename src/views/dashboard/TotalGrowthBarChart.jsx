@@ -54,7 +54,7 @@ const TotalGrowthBarChart = ({ isLoading }) => {
 
     const outOfStockChartOptions = {
       ...initialChartData.options,
-      colors: ['#dc3545'], // Red color for Out of Stock
+      colors: ['#dc3545'], 
       xaxis: {
         labels: {
           style: {

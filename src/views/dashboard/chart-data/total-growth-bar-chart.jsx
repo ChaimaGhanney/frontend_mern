@@ -66,18 +66,18 @@ const chartData = {
     tooltip: {
       y: {
         formatter: function (val) {
-          return '$ ' + val;
+          return ' ' + val;
         }
       }
     }
   },
   series: [
     {
-      name: 'In Stock',
+      name: 'Present',
       data: [0] // Placeholder, will be updated dynamically
     },
     {
-      name: 'Out of Stock',
+      name: 'Absent',
       data: [0] // Placeholder, will be updated dynamically
     }
   ]
