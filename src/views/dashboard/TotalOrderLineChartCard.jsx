@@ -180,7 +180,7 @@ const TotalOrderLineChartCard = ({ isLoading }) => {
                             color: 'primary.200'
                           }}
                         >
-                          {timeValue ? 'In Stock' : 'Out of Stock'}
+                          {timeValue ? 'Present' : 'Absent'}
                         </Typography>
                       </Grid>
                     </Grid>
