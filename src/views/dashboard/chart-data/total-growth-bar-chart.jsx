@@ -73,11 +73,11 @@ const chartData = {
   },
   series: [
     {
-      name: 'Present',
+      name: 'present',
       data: [0] // Placeholder, will be updated dynamically
     },
     {
-      name: 'Absent',
+      name: 'absent',
       data: [0] // Placeholder, will be updated dynamically
     }
   ]
