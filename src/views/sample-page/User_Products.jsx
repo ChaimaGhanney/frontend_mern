@@ -169,7 +169,7 @@ const AllProducts = () => {
                 <b>Category:</b> {selectedProduct.categorie_produit}
               </Typography>
               <Typography variant="body1" color="textSecondary" sx={{ marginBottom: 1 }}>
-                <b>Status:</b> {selectedProduct.etat === 'hors_stock' ? 'Out of Stock' : 'In Stock'}
+                <b>Status:</b> {selectedProduct.etat === 'hors_stock' ? 'Present' : 'Absent'}
               </Typography>
               <Typography variant="body1" color="textSecondary" sx={{ marginBottom: 1 }}>
                 <b>Brand:</b> {selectedProduct.Marque}
