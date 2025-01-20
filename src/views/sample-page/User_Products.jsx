@@ -318,7 +318,7 @@ const AllProducts = () => {
                         <b>Contract type:</b> {product.categorie_produit}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 1 }}>
-                        <b>Status:</b> {product.etat === 'hors_stock' ? 'Out of Stock' : 'In Stock'}
+                        <b>Status:</b> {product.etat === 'hors_stock' ? 'Present' : 'Absent'}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 1 }}>
                         <b>Job:</b> {product.Marque}
