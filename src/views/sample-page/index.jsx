@@ -90,7 +90,7 @@ const AddNewProductForm = () => {
         autoComplete="off"
         onSubmit={handleSubmit}
       >
-        <Typography variant="h6">Product Details</Typography>
+        <Typography variant="h6">Employee Details</Typography>
         <TextField
           required
           id="nom_produit"
@@ -121,7 +121,7 @@ const AddNewProductForm = () => {
           id="etat"
           name="etat"
           select
-          label="Job"
+          label="Status"
           value={formValues.etat}
           onChange={handleInputChange}
           InputProps={{ classes: { underline: 'underline' } }} // Underline style
