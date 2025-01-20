@@ -34,7 +34,7 @@ const chartData = {
     },
     xaxis: {
       type: 'category',
-      categories: ['Prices']
+      categories: ['Présence']
     },
     legend: {
       show: true,

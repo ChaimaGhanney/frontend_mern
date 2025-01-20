@@ -215,12 +215,12 @@ const AllProducts = () => {
       </Dialog>
 
       <Dialog open={showUpdateForm} onClose={handleUpdateDialogClose}>
-        <DialogTitle>Update Product</DialogTitle>
+        <DialogTitle>Update Employee</DialogTitle>
         <DialogContent>
-          <DialogContentText>Update the product details.</DialogContentText>
+          <DialogContentText>Update the Employee details.</DialogContentText>
           <TextField
             fullWidth
-            label="Product Name"
+            label="Employee Name"
             variant="outlined"
             value={updateProductDetails.nom_produit || ''}
             onChange={(e) => setUpdateProductDetails({ ...updateProductDetails, nom_produit: e.target.value })}
@@ -308,7 +308,7 @@ const AllProducts = () => {
                       component="img"
                       height="140"
                       image={`http://192.168.11.103:4000/images/${product?.image_name}`}
-                      alt="product image"
+                      alt="Employee image"
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
                       <Typography variant="h6" gutterBottom>

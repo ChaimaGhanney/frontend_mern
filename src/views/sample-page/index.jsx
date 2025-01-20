@@ -15,8 +15,8 @@ import MainCard from 'ui-component/cards/MainCard';
 import { toast } from 'react-toastify';
 import AllProducts from './User_Products';
 
-const categories = ['informatique', 'bureatique', 'logistique', 'personnelle'];
-const states = ['en_stock', 'hors_stock'];
+const categories = ['CDD', 'CDI', 'CIVP', 'CSC'];
+const states = ['Present', 'Absent'];
 
 const AddNewProductForm = () => {
   const [formValues, setFormValues] = useState({
@@ -75,7 +75,7 @@ const AddNewProductForm = () => {
   };
 
   return (
-    <MainCard title="add a new employee">
+    <MainCard title="ADD a new employee">
       <Box
         component="form"
         sx={{
