@@ -183,7 +183,7 @@ const AddNewProductForm = () => {
               formValues.Prix == ''
             }
           >
-            Add Product
+            Add Employee
           </Button>
         </Box>
       </Box>

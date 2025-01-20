@@ -194,7 +194,7 @@ const AllProducts = () => {
       <Dialog open={showConfirmDelete} onClose={handleDialogClose}>
         <DialogTitle>Confirm Delete</DialogTitle>
         <DialogContent>
-          <DialogContentText>Type 'delete' to confirm deletion of the product.</DialogContentText>
+          <DialogContentText>Type 'delete' to confirm DELETE of the employee.</DialogContentText>
           <TextField
             fullWidth
             label="Type 'delete' to confirm"
@@ -280,7 +280,7 @@ const AllProducts = () => {
         </DialogActions>
       </Dialog>
 
-      <MainCard title="My Products">
+      <MainCard title="List of employees">
         <Box sx={{ p: 2 }}>
           {loading ? (
             <CircularProgress />
@@ -315,19 +315,19 @@ const AllProducts = () => {
                         <b>{product.nom_produit}</b>
                       </Typography>
                       <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 1 }}>
-                        <b>Category:</b> {product.categorie_produit}
+                        <b>Contract type:</b> {product.categorie_produit}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 1 }}>
                         <b>Status:</b> {product.etat === 'hors_stock' ? 'Out of Stock' : 'In Stock'}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 1 }}>
-                        <b>Brand:</b> {product.Marque}
+                        <b>Job:</b> {product.Marque}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 1 }}>
-                        <b>Price:</b> ${product.Prix}
+                        <b>Salary :</b> ${product.Prix}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 1 }}>
-                        <b>Description:</b> {product.Description}
+                        <b>Description :</b> {product.Description}
                       </Typography>
                     </CardContent>
                   </Card>
