@@ -16,7 +16,7 @@ import { toast } from 'react-toastify';
 import AllProducts from './User_Products';
 
 const categories = ['CDD', 'CDI', 'CIVP', 'CSC'];
-const states = ['Present', 'Absent'];
+const states = ['present', 'absent'];
 
 const AddNewProductForm = () => {
   const [formValues, setFormValues] = useState({
