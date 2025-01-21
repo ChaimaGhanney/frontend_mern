@@ -172,7 +172,7 @@ const AllProducts = () => {
                 <b>Status:</b> {selectedProduct.etat === 'hors_stock' ? 'Present' : 'Absent'}
               </Typography>
               <Typography variant="body1" color="textSecondary" sx={{ marginBottom: 1 }}>
-                <b>Brand:</b> {selectedProduct.Marque}
+                <b>Age:</b> {selectedProduct.Marque}
               </Typography>
               <Typography variant="body1" color="textSecondary" sx={{ marginBottom: 1 }}>
                 <b>Price:</b> ${selectedProduct.Prix}
@@ -321,7 +321,7 @@ const AllProducts = () => {
                         <b>Status:</b> {product.etat}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 1 }}>
-                        <b>Job:</b> {product.Marque}
+                        <b>Age:</b> {product.Marque}
                       </Typography>
                       <Typography variant="body2" color="textSecondary" sx={{ marginBottom: 1 }}>
                         <b>Salary :</b> ${product.Prix}
